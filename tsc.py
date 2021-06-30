@@ -1,10 +1,10 @@
 from selenium import webdriver
 
-chromedriver_location = "C:/Users/deniz/Downloads/chromedriver_win32/chromedriver.exe"
+chromedriver_location = "LOCATION IS PRIVATE"
 
 driver = webdriver.Chrome(chromedriver_location)
 
-driver.get('https://www.tandia.com/selfcheck')
+driver.get('NAME IS PRIVATE')
 
 start = '//*[@id="433f9284-9839-403b-94ba-bafc445a6858"]/div/div/a'
 
@@ -12,11 +12,11 @@ driver.find_element_by_xpath(start).click()
 
 f_name = '//*[@id="form-container"]/div/div/div/div/div[1]/div[2]/div[2]/div[2]/div[1]/div/div[2]/div/div/input'
 
-driver.find_element_by_xpath(f_name).send_keys("Deniz")
+driver.find_element_by_xpath(f_name).send_keys("First Name")
 
 l_name = '//*[@id="form-container"]/div/div/div/div/div[1]/div[2]/div[2]/div[2]/div[2]/div/div[2]/div/div/input'
 
-driver.find_element_by_xpath(l_name).send_keys("Saygili")
+driver.find_element_by_xpath(l_name).send_keys("Last Name")
 
 location = '//*[@id="SelectId_0_placeholder"]/span'
 
